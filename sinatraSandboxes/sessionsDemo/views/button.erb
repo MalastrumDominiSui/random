@@ -1,0 +1,13 @@
+<form action="/button" method="get">
+  Choose your favorite subject:
+  <button name="subject" type="submit" value="bink">bink</button>
+  <button name="subject" type="submit" value="bonk">bonk</button>
+</form>
+
+<% if @binkOrbonk = "bink" %>
+  <h1> BINK!</h1>
+ <%elsif @binkOrbonk = "bonk" %> 
+  <h1>BONK!</h1>
+ <%else %>
+  <h1></h1>
+<%end%>
